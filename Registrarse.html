@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/cosm%C3%A9tica-de-mujeres-bellas-maquillaje-extensiones-pesta%C3%B1as-estilo-cabello-sal%C3%B3n-belleza-estudio-icono-vector-157909990.jpg">
+
+    <style>
+      body {
+        background: #fce4ec;
+      }
+
+      .select-wrapper {
+        margin-bottom: 20px;
+      }
+
+      .input-field {
+        margin-bottom: 25px;
+      }
+    </style>
+</head>
+
+<body>
+    
+<nav class="pink lighten-3">
+  <div class="nav-wrapper container">
+
+    <!-- LOGO -->
+    <a href="index.html" class="brand-logo">
+      <img src="https://www.shutterstock.com/image-vector/beauty-woman-hair-leaf-logo-600nw-2553491339.jpg"
+      alt="beauty" style="width: 63px;">
+    </a>
+
+    <!-- MENÚ 100% CORRECTO -->
+    <ul class="right hide-on-med-and-down">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="nosotras.html">Sobre Nosotras</a></li>
+      <li class="active"><a href="registro.html">Registrarse</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<div class="container">
+  <h4 class="center-align pink-text">Registro de usuario</h4>
+
+  <div class="card">
+    <div class="card-content">
+
+      <form>
+        <div class="row">
+
+          <div class="input-field col s12">
+            <input type="text" id="nombre">
+            <label for="nombre">Nombre completo</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input type="email" id="correo">
+            <label for="correo">Correo electrónico</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input type="text" id="telefono">
+            <label for="telefono">Teléfono</label>
+          </div>
+
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Elige un servicio</option>
+              <option value="1">Corte de cabello</option>
+              <option value="2">Manicure</option>
+              <option value="3">Maquillaje</option>
+            </select>
+            <label>Servicio</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input type="date" id="fecha">
+            <label for="fecha">Fecha</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input type="time" id="hora">
+            <label for="hora">Hora</label>
+          </div>
+
+          <div class="center-align">
+            <button class="btn pink" type="submit">
+              Registrar
+            </button>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="page-footer pink lighten-3">
+  <div class="container center-align">
+    © 2026 Beauty Manager
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="js/materialize.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  M.FormSelect.init(elems);
+});
+</script>
+
+</body>
+</html>

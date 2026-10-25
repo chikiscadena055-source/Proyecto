@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+
+  <!-- Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+
+  <style>
+    body {
+      background: #fce4ec;
+    }
+
+    .banner {
+      height: 400px;
+      background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .banner h2 {
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .card {
+      border-radius: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="pink lighten-3">
+  <div class="nav-wrapper container">
+
+    <!-- LOGO → SIEMPRE A PORTADA -->
+    <a href="index.html" class="brand-logo">Beauty</a>
+
+    <ul class="right hide-on-med-and-down">
+      <!-- ACTIVO -->
+      <li class="active"><a href="inicio.html">Inicio</a></li>
+
+      <li><a href="nosotras.html">Sobre Nosotras</a></li>
+      <li><a href="Registrarse.html">Registrarse</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- BANNER -->
+<div class="container">
+  <div class="banner">
+    <h2>✨ Bienvenida a Beauty Manager ✨</h2>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<div class="container">
+  <h4 class="center-align">Nuestros Servicios</h4>
+
+  <div class="row">
+
+    <div class="col s12 m4">
+      <div class="card center-align">
+        <div class="card-content">
+          <i class="material-icons large pink-text">content_cut</i>
+          <h5>Corte de Cabello</h5>
+          <p>Estilos modernos y personalizados</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card center-align">
+        <div class="card-content">
+          <i class="material-icons large pink-text">brush</i>
+          <h5>Tintura</h5>
+          <p>Colores vibrantes y duraderos</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card center-align">
+        <div class="card-content">
+          <i class="material-icons large pink-text">spa</i>
+          <h5>Manicure</h5>
+          <p>Uñas elegantes y cuidadas</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- BOTÓN -->
+<div class="container center-align" style="margin-bottom: 30px;">
+  <a href="registro.html" class="btn pink">Agendar Cita</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="page-footer pink lighten-3">
+  <div class="container center-align">
+    © 2026 Beauty Manager
+  </div>
+</footer>
+
+<script src="js/materialize.min.js"></script>
+
+</body>
+</html>
